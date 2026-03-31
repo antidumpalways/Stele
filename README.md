@@ -28,7 +28,7 @@ Every story is permanently linked to a real human. No bots. No fake witnesses. N
 
 | | |
 |---|---|
-| **App** | https://stele.replit.app |
+| **App** | https://stele.replit.app](https://stelexprotocollabs.fun |
 | **Contract** | [`0xFc766E735eD539b5889da4b576CBD7818F5A3Ba6`](https://worldchain-sepolia.explorer.alchemy.com/address/0xFc766E735eD539b5889da4b576CBD7818F5A3Ba6) |
 | **Network** | World Chain Sepolia (chainId: 4801) |
 | **IPFS Gateway** | https://w3s.link/ipfs |
