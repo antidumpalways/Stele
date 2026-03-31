@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "dEqQFuUtyMCZxu4BY_wx_"
+uri = "file://DEMO_SCRIPT.md"
+type = "text"
+title = "Demo Video Script — STELE Hackathon"

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ── DARK MODE (default) ── */
+  :root,
+  .dark {
+    --background: 220 15% 8%;
+    --foreground: 40 20% 90%;
+
+    --card: 220 12% 12%;
+    --card-foreground: 40 20% 90%;
+
+    --popover: 220 12% 12%;
+    --popover-foreground: 40 20% 90%;
+
+    --primary: 38 80% 55%;
+    --primary-foreground: 220 15% 8%;
+
+    --secondary: 220 10% 18%;
+    --secondary-foreground: 40 15% 80%;
+
+    --muted: 220 10% 15%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 38 80% 55%;
+    --accent-foreground: 220 15% 8%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 40 20% 90%;
+
+    --border: 220 10% 20%;
+    --input: 220 10% 20%;
+    --ring: 38 80% 55%;
+
+    --radius: 0.25rem;
+
+    --stele-gold: 38 80% 55%;
+    --stele-gold-dim: 38 60% 35%;
+    --stele-amber: 30 90% 50%;
+    --stele-stone: 220 8% 25%;
+    --stele-obsidian: 220 15% 6%;
+    --stele-inscription: 40 30% 75%;
+    --stele-verified: 142 60% 45%;
+
+    --sidebar-background: 220 12% 10%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 38 80% 55%;
+    --sidebar-primary-foreground: 220 15% 8%;
+    --sidebar-accent: 220 10% 18%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 220 10% 20%;
+    --sidebar-ring: 38 80% 55%;
+  }
+
+  /* ── LIGHT MODE ── */
+  .light {
+    --background: 220 25% 96%;
+    --foreground: 220 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 12%;
+
+    --primary: 38 80% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 15% 91%;
+    --secondary-foreground: 220 20% 25%;
+
+    --muted: 220 15% 93%;
+    --muted-foreground: 220 12% 42%;
+
+    --accent: 38 80% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 84%;
+    --input: 220 15% 84%;
+    --ring: 38 80% 48%;
+
+    --stele-gold: 38 80% 44%;
+    --stele-gold-dim: 38 60% 32%;
+    --stele-amber: 30 90% 42%;
+    --stele-stone: 220 10% 70%;
+    --stele-obsidian: 220 20% 15%;
+    --stele-inscription: 220 20% 35%;
+    --stele-verified: 142 55% 38%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 25% 12%;
+    --sidebar-primary: 38 80% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 91%;
+    --sidebar-accent-foreground: 220 25% 12%;
+    --sidebar-border: 220 15% 84%;
+    --sidebar-ring: 38 80% 48%;
+  }
+
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(38 80% 55%), hsl(30 90% 50%), hsl(38 60% 35%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .light .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(38 80% 40%), hsl(30 90% 38%), hsl(38 60% 30%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-grain {
+    position: relative;
+  }
+
+  .bg-grain::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .stele-border {
+    border: 1px solid hsl(38 80% 55% / 0.15);
+  }
+
+  .stele-glow {
+    box-shadow: 0 0 40px -10px hsl(38 80% 55% / 0.15);
+  }
+
+  @keyframes pulse-gold {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  .animate-pulse-gold {
+    animation: pulse-gold 2s ease-in-out infinite;
+  }
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STELE — Immutable Witness Protocol</title>
+    <meta name="description" content="The first censorship-proof journalism protocol. Verified humans inscribe truth permanently on IPFS/Filecoin and World Chain. Sybil-resistant, tamper-proof, immutable." />
+    <meta name="author" content="STELE Protocol" />
+    <meta name="keywords" content="decentralized journalism, World ID, IPFS, Storacha, Filecoin, censorship resistant, citizen journalism, blockchain, World Chain" />
+
+    <meta property="og:title" content="STELE — Immutable Witness Protocol" />
+    <meta property="og:description" content="The first censorship-proof journalism protocol. Verified humans inscribe truth on IPFS + World Chain. 1 Human, 1 Voice, Forever." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="STELE" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="STELE — Immutable Witness Protocol" />
+    <meta name="twitter:description" content="Decentralized journalism. Verified by World ID. Stored on IPFS. Anchored on World Chain. Censorship-proof, forever." />
+    <script>
+      try {
+        var t = localStorage.getItem('stele-theme') || 'dark';
+        document.documentElement.classList.add(t);
+      } catch(e) {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

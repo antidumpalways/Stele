@@ -1,0 +1,84 @@
+S
+
+Stelle
+Help
+Docs
+A
+Dashboard
+World ID
+Configuration
+Mini App
+Overview
+Danger zone
+
+App icon *
+Stelle
+Not verified
+
+Submit for review
+Basic information
+Stelle
+App name*
+Stele
+Publisher
+ 
+App URL*
+ 
+App Official Website*
+app_ba9c46955fba61ac465b1f91d5aad80b
+ID
+
+Mini App Configuration
+This is a Mini App
+Check this if you have integrated mini-kit into your app and want it to load as a mini-app. Your app will be rejected if this is not true.
+
+Compliance
+Includes functionality that may be considered gambling or the purchase of digital in-game items, as defined by Apple.
+
+Verified humans only
+Only unique human users verified via World ID can use the app. This makes your app eligible for a special badge in the Mini App Store.
+
+
+Category*
+AI
+Support *
+Please include support information. Users will be able to reach out to you for help.
+
+
+https://example.com
+Content card image *
+This image will be used when featuring your app in the Mini App Store. Required aspect ratio is 345px width and 240px height.
+Drop image here to upload
+or browse files
+Supported Countries *
+List of countries where your app is available. This setting allows you to display your App in the Mini App Store in selected countries only.
+Laws and regulations governing mini apps vary by country and region. Before launching, ensure your app complies with all relevant local rules, especially regarding chance-based or gambling-like features.
+
+Enter country
+Supported Languages *
+Choose the languages you want to localize your Mini App Store listing in. Users will then see your Mini App in their preferred language, in the App Store. After selecting languages, you'll be required to fill out the additional sections below.
+
+Enter language
+
+Clear all
+
+Localisations *
+Provide localized content for each supported language.
+lang flag
+English (US)
+Stelle
+App Name
+ 
+Short Name
+ 
+App Tag Line
+ 
+Description
+Showcase Images *
+Upload up to 3 images to showcase your application.
+Drop image here to upload
+or browse files
+Meta Tag Image
+This image will be displayed as the opengraph meta tags image when linking your app. Fallback to your app's logo image if not provided.
+Drop image here to upload
+or browse files
